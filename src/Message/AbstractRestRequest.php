@@ -56,6 +56,11 @@ abstract class AbstractRestRequest extends \Omnipay\Common\Message\AbstractReque
     protected $liveEndpoint = 'https://api.paypal.com';
 
     /**
+     * @var bool
+     */
+    protected $negativeAmountAllowed = true;
+
+    /**
      * PayPal Payer ID
      *
      * @var string PayerID
